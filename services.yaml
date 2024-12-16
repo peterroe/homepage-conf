@@ -1,0 +1,115 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+- Interest:
+    - firefox:
+        icon: firefox.png
+        href: http://[your ip]:5800
+        description: 内网浏览器
+        showStats: true
+        container: firefox
+        server: my-docker
+        ping: firefox.peterroe.me
+        siteMonitor: https://firefox.peterroe.me
+    - Dozzle:
+        icon: dozzle.png
+        href: http://[your ip]:8080
+        description: Docker 容器监控
+        showStats: true
+        container: competent_merkle
+        server: my-docker
+    - memo:
+        icon: memos.png
+        href: http://[your ip]:5230
+        description: 随心笔记
+        # showStats: true
+        container: memos
+        server: my-docker
+    - Dockge:
+        icon: dockge.png
+        href: http://[your ip]:6001
+        description: compose 容器管理
+        # showStats: true
+        container: dockge-dockge-1
+        server: my-docker
+
+- 资源管理:
+    - Immich:
+        icon: immich.png
+        href: http://[your ip]:2283
+        description: 自托管照片和视频管理解决方案
+        showStats: true
+        # container: immich_server
+        # server: my-docker
+        ping: photo.peterroe.me
+        siteMonitor: https://photo.peterroe.me
+        widget:
+            type: immich
+            url: http://[your ip]:2283
+            key: your key
+            version: 2 # optional, default is 1
+    - Nextcloud:
+        icon: nextcloud.png
+        href: http://[your ip]:5757
+        description: 自建网盘.
+        showStats: true
+        container: nextcloud-1
+        server: my-docker
+        ping: nextcloud.peterroe.me
+        siteMonitor: https://nextcloud.peterroe.me
+    - Lsky-Pro:
+        icon: https://www.lsky.pro/assets/favicon.ico
+        href: http://[your ip]:8089
+        description: 兰空图床.
+        # showStats: true
+        container: halcyonazure-lsky-pro-docker-1
+        server: my-docker
+        ping: static.peterroe.me
+        siteMonitor: https://static.peterroe.me
+
+- 自建服务:
+    - OGImage:
+        icon: github.png
+        href: http://[your ip]:8888
+        description: og 资源抓取
+        showStats: true
+        container: my-ogimg-app-1
+        server: my-docker
+        ping: ogimg.peterroe.me
+        siteMonitor: https://ogimg.peterroe.me
+    - Dufs:
+        icon: si-files
+        description: 文件托管
+        href: http://[your ip]:8265
+        showStats: true
+        container: dufs_file_server
+        server: my-docker
+        ping: share.peterroe.me
+        siteMonitor: https://share.peterroe.me
+    - V2rayA:
+        icon: si-v
+        description: 服务代理
+        href: http://[your ip]:2017
+        # showStats: true
+        container: v2raya
+        server: my-docker
+    - Frpc:
+        icon: si-gitconnected
+        description: 内网穿透服务
+        # showStats: true
+        container: frpc
+        server: my-docker
+        ping: x.x.x.x
+- 数据库:
+    - MariaDB:
+        icon: mariadb.png
+        description: 存储 lsky 和 nextcloud 文件
+        showStats: true
+    - phpMyAdmin:
+        icon: phpmyadmin.png
+        description: 管理 MariaDB
+        href: http://[your ip]/phpmyadmin
+        showStats: true
+        siteMonitor: http://[your ip]/phpmyadmin
+

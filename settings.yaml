@@ -1,0 +1,25 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings
+language: zh-CN
+title: Homepage
+favicon: https://share.peterroe.me/public/avatar/avatar.png
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+background:
+  image: https://share.peterroe.me/public/wallpaper/jinx.png
+  # blur: sm
+  # saturate: 50
+  # brightness: 50
+  opacity: 50
+layout:
+  Interest:
+  资源管理:
+  自建服务:
+  数据库:
+    style: row
+    columns: 4
+  Developer:
+  Social:
+  Entertainment:
